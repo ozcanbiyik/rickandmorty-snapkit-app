@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C25E59927F28AD20054F79E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25E59827F28AD20054F79E /* HomePageViewController.swift */; };
+		7C25E59C27F28D820054F79E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C25E59B27F28D820054F79E /* SnapKit */; };
 		7CFD388227F147D700491886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD388127F147D700491886 /* AppDelegate.swift */; };
 		7CFD388427F147D700491886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD388327F147D700491886 /* SceneDelegate.swift */; };
 		7CFD388627F147D700491886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD388527F147D700491886 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C25E59827F28AD20054F79E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		7CFD387E27F147D700491886 /* rick-and-morty-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rick-and-morty-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD388127F147D700491886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CFD388327F147D700491886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +34,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C25E59C27F28D820054F79E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C25E59127F2897B0054F79E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7C25E59827F28AD20054F79E /* HomePageViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7C25E59227F289820054F79E /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		7C25E59327F2898B0054F79E /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		7C25E59427F289950054F79E /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		7C25E59527F289A50054F79E /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		7C25E59627F28A290054F79E /* core */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD388127F147D700491886 /* AppDelegate.swift */,
+				7CFD388327F147D700491886 /* SceneDelegate.swift */,
+				7CFD388527F147D700491886 /* ViewController.swift */,
+				7CFD388727F147D700491886 /* Main.storyboard */,
+				7CFD388A27F147DA00491886 /* Assets.xcassets */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		7C25E59727F28A830054F79E /* home-page-module */ = {
+			isa = PBXGroup;
+			children = (
+				7C25E59127F2897B0054F79E /* view */,
+				7C25E59227F289820054F79E /* presenter */,
+				7C25E59327F2898B0054F79E /* interactor */,
+				7C25E59427F289950054F79E /* protocols */,
+				7C25E59527F289A50054F79E /* router */,
+			);
+			path = "home-page-module";
+			sourceTree = "<group>";
+		};
 		7CFD387527F147D700491886 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +120,8 @@
 		7CFD388027F147D700491886 /* rick-and-morty-app */ = {
 			isa = PBXGroup;
 			children = (
-				7CFD388127F147D700491886 /* AppDelegate.swift */,
-				7CFD388327F147D700491886 /* SceneDelegate.swift */,
-				7CFD388527F147D700491886 /* ViewController.swift */,
-				7CFD388727F147D700491886 /* Main.storyboard */,
-				7CFD388A27F147DA00491886 /* Assets.xcassets */,
+				7C25E59727F28A830054F79E /* home-page-module */,
+				7C25E59627F28A290054F79E /* core */,
 				7CFD388C27F147DA00491886 /* LaunchScreen.storyboard */,
 				7CFD388F27F147DA00491886 /* Info.plist */,
 			);
@@ -83,6 +144,9 @@
 			dependencies = (
 			);
 			name = "rick-and-morty-app";
+			packageProductDependencies = (
+				7C25E59B27F28D820054F79E /* SnapKit */,
+			);
 			productName = "rick-and-morty-app";
 			productReference = 7CFD387E27F147D700491886 /* rick-and-morty-app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +175,9 @@
 				Base,
 			);
 			mainGroup = 7CFD387527F147D700491886;
+			packageReferences = (
+				7C25E59A27F28D820054F79E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 7CFD387F27F147D700491886 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C25E59927F28AD20054F79E /* HomePageViewController.swift in Sources */,
 				7CFD388627F147D700491886 /* ViewController.swift in Sources */,
 				7CFD388227F147D700491886 /* AppDelegate.swift in Sources */,
 				7CFD388427F147D700491886 /* SceneDelegate.swift in Sources */,
@@ -217,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -297,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C25E59A27F28D820054F79E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C25E59B27F28D820054F79E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C25E59A27F28D820054F79E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CFD387627F147D700491886 /* Project object */;
 }
