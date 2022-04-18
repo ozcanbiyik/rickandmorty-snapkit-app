@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		7C25E59927F28AD20054F79E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25E59827F28AD20054F79E /* HomePageViewController.swift */; };
 		7C25E59C27F28D820054F79E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C25E59B27F28D820054F79E /* SnapKit */; };
+		7C5FE69A27F52F720046BF0D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5FE69927F52F720046BF0D /* Apollo */; };
+		7C5FE69C27F52F720046BF0D /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5FE69B27F52F720046BF0D /* ApolloWebSocket */; };
+		7C5FE69E27F533DF0046BF0D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FE69D27F533DF0046BF0D /* API.swift */; };
+		7C5FE6A127F54ECB0046BF0D /* HomePageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FE6A027F54ECB0046BF0D /* HomePageTableViewCell.swift */; };
+		7C5FE6AE27FD26100046BF0D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5FE6AD27FD26100046BF0D /* Kingfisher */; };
+		7CDD5127280D0F0100C3B38C /* RickPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD5126280D0F0100C3B38C /* RickPageViewController.swift */; };
+		7CDD5129280D0F2900C3B38C /* RickPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD5128280D0F2900C3B38C /* RickPageTableViewCell.swift */; };
+		7CDD512C280D10D300C3B38C /* MortyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD512B280D10D300C3B38C /* MortyPageTableViewCell.swift */; };
+		7CDD512E280D10E800C3B38C /* MortyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD512D280D10E800C3B38C /* MortyPageViewController.swift */; };
+		7CDD5134280D15A500C3B38C /* MortyList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD5133280D15A500C3B38C /* MortyList.graphql */; };
+		7CDD5136280D879200C3B38C /* RickList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD5135280D879100C3B38C /* RickList.graphql */; };
+		7CDD513E280DBCC000C3B38C /* rick_and_morty_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD513D280DBCC000C3B38C /* rick_and_morty_appTests.swift */; };
 		7CFD388227F147D700491886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD388127F147D700491886 /* AppDelegate.swift */; };
 		7CFD388427F147D700491886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD388327F147D700491886 /* SceneDelegate.swift */; };
 		7CFD388627F147D700491886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFD388527F147D700491886 /* ViewController.swift */; };
@@ -17,8 +29,30 @@
 		7CFD388E27F147DA00491886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFD388C27F147DA00491886 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7CDD513F280DBCC000C3B38C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CFD387627F147D700491886 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CFD387D27F147D700491886;
+			remoteInfo = "rick-and-morty-app";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7C25E59827F28AD20054F79E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		7C5FE69327F521540046BF0D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		7C5FE69527F5258E0046BF0D /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
+		7C5FE69D27F533DF0046BF0D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7C5FE6A027F54ECB0046BF0D /* HomePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewCell.swift; sourceTree = "<group>"; };
+		7CDD5126280D0F0100C3B38C /* RickPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickPageViewController.swift; sourceTree = "<group>"; };
+		7CDD5128280D0F2900C3B38C /* RickPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickPageTableViewCell.swift; sourceTree = "<group>"; };
+		7CDD512B280D10D300C3B38C /* MortyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyPageTableViewCell.swift; sourceTree = "<group>"; };
+		7CDD512D280D10E800C3B38C /* MortyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyPageViewController.swift; sourceTree = "<group>"; };
+		7CDD5133280D15A500C3B38C /* MortyList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MortyList.graphql; sourceTree = "<group>"; };
+		7CDD5135280D879100C3B38C /* RickList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = RickList.graphql; sourceTree = "<group>"; };
+		7CDD513B280DBCC000C3B38C /* rick-and-morty-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rick-and-morty-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDD513D280DBCC000C3B38C /* rick_and_morty_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rick_and_morty_appTests.swift; sourceTree = "<group>"; };
 		7CFD387E27F147D700491886 /* rick-and-morty-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rick-and-morty-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFD388127F147D700491886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CFD388327F147D700491886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,11 +64,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7CDD5138280DBCC000C3B38C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CFD387B27F147D700491886 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5FE6AE27FD26100046BF0D /* Kingfisher in Frameworks */,
 				7C25E59C27F28D820054F79E /* SnapKit in Frameworks */,
+				7C5FE69C27F52F720046BF0D /* ApolloWebSocket in Frameworks */,
+				7C5FE69A27F52F720046BF0D /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,34 +91,6 @@
 				7C25E59827F28AD20054F79E /* HomePageViewController.swift */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		7C25E59227F289820054F79E /* presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = presenter;
-			sourceTree = "<group>";
-		};
-		7C25E59327F2898B0054F79E /* interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = interactor;
-			sourceTree = "<group>";
-		};
-		7C25E59427F289950054F79E /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = protocols;
-			sourceTree = "<group>";
-		};
-		7C25E59527F289A50054F79E /* router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = router;
 			sourceTree = "<group>";
 		};
 		7C25E59627F28A290054F79E /* core */ = {
@@ -93,18 +109,89 @@
 			isa = PBXGroup;
 			children = (
 				7C25E59127F2897B0054F79E /* view */,
-				7C25E59227F289820054F79E /* presenter */,
-				7C25E59327F2898B0054F79E /* interactor */,
-				7C25E59427F289950054F79E /* protocols */,
-				7C25E59527F289A50054F79E /* router */,
+				7C5FE69F27F54E950046BF0D /* tableview */,
 			);
 			path = "home-page-module";
+			sourceTree = "<group>";
+		};
+		7C5FE68327F51D870046BF0D /* entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		7C5FE69F27F54E950046BF0D /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				7C5FE6A027F54ECB0046BF0D /* HomePageTableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		7CDD5125280D0EC900C3B38C /* rick-page-module */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD5131280D11E200C3B38C /* view */,
+				7CDD5132280D11EC00C3B38C /* tableview */,
+			);
+			path = "rick-page-module";
+			sourceTree = "<group>";
+		};
+		7CDD512A280D10B100C3B38C /* morty-page-module */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD512F280D11A900C3B38C /* view */,
+				7CDD5130280D11AF00C3B38C /* tableview */,
+			);
+			path = "morty-page-module";
+			sourceTree = "<group>";
+		};
+		7CDD512F280D11A900C3B38C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD512D280D10E800C3B38C /* MortyPageViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7CDD5130280D11AF00C3B38C /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD512B280D10D300C3B38C /* MortyPageTableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		7CDD5131280D11E200C3B38C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD5126280D0F0100C3B38C /* RickPageViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7CDD5132280D11EC00C3B38C /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD5128280D0F2900C3B38C /* RickPageTableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		7CDD513C280DBCC000C3B38C /* rick-and-morty-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CDD513D280DBCC000C3B38C /* rick_and_morty_appTests.swift */,
+			);
+			path = "rick-and-morty-appTests";
 			sourceTree = "<group>";
 		};
 		7CFD387527F147D700491886 = {
 			isa = PBXGroup;
 			children = (
 				7CFD388027F147D700491886 /* rick-and-morty-app */,
+				7CDD513C280DBCC000C3B38C /* rick-and-morty-appTests */,
 				7CFD387F27F147D700491886 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				7CFD387E27F147D700491886 /* rick-and-morty-app.app */,
+				7CDD513B280DBCC000C3B38C /* rick-and-morty-appTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,7 +208,15 @@
 		7CFD388027F147D700491886 /* rick-and-morty-app */ = {
 			isa = PBXGroup;
 			children = (
+				7C5FE69D27F533DF0046BF0D /* API.swift */,
+				7CDD512A280D10B100C3B38C /* morty-page-module */,
+				7CDD5125280D0EC900C3B38C /* rick-page-module */,
 				7C25E59727F28A830054F79E /* home-page-module */,
+				7C5FE68327F51D870046BF0D /* entity */,
+				7C5FE69327F521540046BF0D /* schema.json */,
+				7CDD5133280D15A500C3B38C /* MortyList.graphql */,
+				7CDD5135280D879100C3B38C /* RickList.graphql */,
+				7C5FE69527F5258E0046BF0D /* LaunchList.graphql */,
 				7C25E59627F28A290054F79E /* core */,
 				7CFD388C27F147DA00491886 /* LaunchScreen.storyboard */,
 				7CFD388F27F147DA00491886 /* Info.plist */,
@@ -131,10 +227,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7CDD513A280DBCC000C3B38C /* rick-and-morty-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CDD5141280DBCC000C3B38C /* Build configuration list for PBXNativeTarget "rick-and-morty-appTests" */;
+			buildPhases = (
+				7CDD5137280DBCC000C3B38C /* Sources */,
+				7CDD5138280DBCC000C3B38C /* Frameworks */,
+				7CDD5139280DBCC000C3B38C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CDD5140280DBCC000C3B38C /* PBXTargetDependency */,
+			);
+			name = "rick-and-morty-appTests";
+			productName = "rick-and-morty-appTests";
+			productReference = 7CDD513B280DBCC000C3B38C /* rick-and-morty-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7CFD387D27F147D700491886 /* rick-and-morty-app */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CFD389227F147DA00491886 /* Build configuration list for PBXNativeTarget "rick-and-morty-app" */;
 			buildPhases = (
+				7C5FE69727F526150046BF0D /* Apollo Code Gen */,
 				7CFD387A27F147D700491886 /* Sources */,
 				7CFD387B27F147D700491886 /* Frameworks */,
 				7CFD387C27F147D700491886 /* Resources */,
@@ -146,6 +261,9 @@
 			name = "rick-and-morty-app";
 			packageProductDependencies = (
 				7C25E59B27F28D820054F79E /* SnapKit */,
+				7C5FE69927F52F720046BF0D /* Apollo */,
+				7C5FE69B27F52F720046BF0D /* ApolloWebSocket */,
+				7C5FE6AD27FD26100046BF0D /* Kingfisher */,
 			);
 			productName = "rick-and-morty-app";
 			productReference = 7CFD387E27F147D700491886 /* rick-and-morty-app.app */;
@@ -161,6 +279,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					7CDD513A280DBCC000C3B38C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7CFD387D27F147D700491886;
+					};
 					7CFD387D27F147D700491886 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -177,42 +299,97 @@
 			mainGroup = 7CFD387527F147D700491886;
 			packageReferences = (
 				7C25E59A27F28D820054F79E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7C5FE69827F52F720046BF0D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				7C5FE6AC27FD260F0046BF0D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 7CFD387F27F147D700491886 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7CFD387D27F147D700491886 /* rick-and-morty-app */,
+				7CDD513A280DBCC000C3B38C /* rick-and-morty-appTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7CDD5139280DBCC000C3B38C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CFD387C27F147D700491886 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7CFD388E27F147DA00491886 /* LaunchScreen.storyboard in Resources */,
+				7CDD5134280D15A500C3B38C /* MortyList.graphql in Resources */,
 				7CFD388B27F147DA00491886 /* Assets.xcassets in Resources */,
+				7CDD5136280D879200C3B38C /* RickList.graphql in Resources */,
 				7CFD388927F147D700491886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C5FE69727F526150046BF0D /* Apollo Code Gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo Code Gen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		7CDD5137280DBCC000C3B38C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDD513E280DBCC000C3B38C /* rick_and_morty_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7CFD387A27F147D700491886 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDD5127280D0F0100C3B38C /* RickPageViewController.swift in Sources */,
+				7CDD512E280D10E800C3B38C /* MortyPageViewController.swift in Sources */,
 				7C25E59927F28AD20054F79E /* HomePageViewController.swift in Sources */,
+				7C5FE6A127F54ECB0046BF0D /* HomePageTableViewCell.swift in Sources */,
 				7CFD388627F147D700491886 /* ViewController.swift in Sources */,
 				7CFD388227F147D700491886 /* AppDelegate.swift in Sources */,
 				7CFD388427F147D700491886 /* SceneDelegate.swift in Sources */,
+				7C5FE69E27F533DF0046BF0D /* API.swift in Sources */,
+				7CDD5129280D0F2900C3B38C /* RickPageTableViewCell.swift in Sources */,
+				7CDD512C280D10D300C3B38C /* MortyPageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CDD5140280DBCC000C3B38C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CFD387D27F147D700491886 /* rick-and-morty-app */;
+			targetProxy = 7CDD513F280DBCC000C3B38C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7CFD388727F147D700491886 /* Main.storyboard */ = {
@@ -234,6 +411,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7CDD5142280DBCC000C3B38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4583CR5AQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biyikozcan.rick-and-morty-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rick-and-morty-app.app/rick-and-morty-app";
+			};
+			name = Debug;
+		};
+		7CDD5143280DBCC000C3B38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4583CR5AQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.biyikozcan.rick-and-morty-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rick-and-morty-app.app/rick-and-morty-app";
+			};
+			name = Release;
+		};
 		7CFD389027F147DA00491886 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,6 +626,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7CDD5141280DBCC000C3B38C /* Build configuration list for PBXNativeTarget "rick-and-morty-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDD5142280DBCC000C3B38C /* Debug */,
+				7CDD5143280DBCC000C3B38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7CFD387927F147D700491886 /* Build configuration list for PBXProject "rick-and-morty-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -440,6 +664,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		7C5FE69827F52F720046BF0D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7C5FE6AC27FD260F0046BF0D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -447,6 +687,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7C25E59A27F28D820054F79E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		7C5FE69927F52F720046BF0D /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5FE69827F52F720046BF0D /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		7C5FE69B27F52F720046BF0D /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5FE69827F52F720046BF0D /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		7C5FE6AD27FD26100046BF0D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5FE6AC27FD260F0046BF0D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

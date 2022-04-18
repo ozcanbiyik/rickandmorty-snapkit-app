@@ -1,0 +1,15 @@
+query MortyList{
+  characters(filter: {name:"Morty"}){
+    info{
+      count
+    }
+    results{
+      id
+      name
+      image
+      location{
+        name
+      }
+    }
+  }
+}

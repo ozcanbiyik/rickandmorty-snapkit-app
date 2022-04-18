@@ -1,0 +1,16 @@
+query RickList{
+  characters(filter: {name:"Rick"}){
+    info{
+      count
+    }
+    results{
+      id
+      name
+      image
+      location{
+        name
+      }
+    }
+  }
+}
+

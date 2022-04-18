@@ -10,7 +10,7 @@ import SnapKit
 import Apollo
 import Kingfisher
 
-final class HomePageViewController: UIViewController {
+final class RickPageViewController: UIViewController {
     
     private let labelTitle: UILabel = UILabel()
     private var tableView: UITableView = UITableView()
@@ -18,12 +18,12 @@ final class HomePageViewController: UIViewController {
     private let icon = UIImage(named: "filter")
     
     var apollo = ApolloClient(url: URL(string: "https://rickandmortyapi.com/graphql")!)
-    var launches = [LaunchListQuery.Data.Character.Result]()
+    var launches = [RickListQuery.Data.Character.Result]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        self.apollo.fetch(query: LaunchListQuery()) { result in
+        self.apollo.fetch(query: RickListQuery()) { result in
             switch result{
             case .success(let graphqlResult):
                 if let launches = graphqlResult.data?.characters?.results?.compactMap({ $0 }){
@@ -53,19 +53,21 @@ final class HomePageViewController: UIViewController {
     private func drawDesign(){
         tableView.delegate = self
         tableView.dataSource = self
+        //tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-        tableView.register(HomePageTableViewCell.self, forCellReuseIdentifier: HomePageTableViewCell.Identifier.custom.rawValue)
+        tableView.register(RickPageTableViewCell.self, forCellReuseIdentifier: RickPageTableViewCell.Identifier.custom.rawValue)
         tableView.rowHeight = 265
         
         DispatchQueue.main.async { [self] in
             self.view.backgroundColor = .white
-            let titleString = "Rick & Morty"
+            let titleString = "Rick"
             self.labelTitle.font = UIFont.boldSystemFont(ofSize: 24)
             self.labelTitle.text = titleString
             self.menu.setImage(self.icon, for: .normal)
             self.menu.imageView?.contentMode = .scaleAspectFit
             self.menu.addTarget(self, action: #selector(self.buttonAction), for: .touchUpInside)
             self.menu.tag = 1
+
         }
         
     }
@@ -92,7 +94,7 @@ final class HomePageViewController: UIViewController {
    
 }
 
-extension HomePageViewController{
+extension RickPageViewController{
     
     private func makeLabel(){
         labelTitle.snp.makeConstraints { (make) in
@@ -122,19 +124,19 @@ extension HomePageViewController{
     
 }
 
-extension HomePageViewController: UITableViewDelegate, UITableViewDataSource{
+extension RickPageViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return launches.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: HomePageTableViewCell = tableView.dequeueReusableCell(withIdentifier: HomePageTableViewCell.Identifier.custom.rawValue) as? HomePageTableViewCell else {
+        guard let cell: RickPageTableViewCell = tableView.dequeueReusableCell(withIdentifier: RickPageTableViewCell.Identifier.custom.rawValue) as? RickPageTableViewCell else {
             return UITableViewCell()
         }
         cell.selectionStyle = .none
         cell.layer.cornerRadius = 10
         cell.layer.borderColor = UIColor.gray.cgColor
-        cell.layer.borderWidth = 0.1 
+        cell.layer.borderWidth = 0.1
         cell.layer.shadowOffset = CGSize(width: 0, height: 3)
         cell.layer.shadowRadius = 3
         cell.layer.shadowOpacity = 0.3
